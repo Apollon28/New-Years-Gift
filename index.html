@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Varchhu</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+
+			HAPPY NEW YEAR!!<br />
+			<span class="space"/><span class="comments"></span><br />
+			Hello Kooky !<br /><br />
+			<strong style="color:#AF69EE">K</strong>nowing you has been the greatest gift of my life.<br />
+			<strong style="color:#AF69EE">I</strong> cherish every moment we’ve spent together, and those yet to arrive.<br />
+			<strong style="color:#AF69EE">M</strong>emories of our laughter, arguments, and even the tears we’ve shared are treasures I hold dear.<br />
+			<strong style="color:#AF69EE">B</strong>eing honest, I never thought we’d come this far, yet you've made it all clear.<br />
+			<strong style="color:#AF69EE">E</strong>ven so, I’m grateful that you’ve stood by my side, unwavering and strong.<br />
+			<strong style="color:#AF69EE">R</strong>emember that no matter what, I’ll always be here, where you belong.<br />
+			<strong style="color:#AF69EE">L</strong>ife may not have given us ideal circumstances right now, but I believe in us.<br />
+			<strong style="color:#AF69EE">Y</strong>ou are my partner, my strength, and my dream until it last.<br /><br />
+			<strong style="color:#AF69EE">C</strong>hoosing to make this work is a commitment I wholeheartedly embrace.<br />
+			<strong style="color:#AF69EE">A</strong>s the year ends, I dream of spending the next one with you—and many more in decades.<br />
+			<strong style="color:#AF69EE">M</strong>y wish is to share every celebration with you, not just from afar but together.<br />
+			<strong style="color:#AF69EE">A</strong>nd if it’s within God’s plan, I hope we can share a lifetime, even 100 years, stronger.<br />
+			<strong style="color:#AF69EE">N</strong>othing would mean more to me than to hold you close and feel your warmth today.<br />
+			<strong style="color:#AF69EE">G</strong>iven the distance, though, I know this longing must wait and stay.<br />
+			<strong style="color:#AF69EE">Y</strong>et, I’m hopeful that next year will bring us closer in every way.<br />
+			<strong style="color:#AF69EE">A</strong>ll we need is to focus on ourselves, growing stronger and better, we'll pray.<br />
+			<strong style="color:#AF69EE">N</strong>ext year-end, may we celebrate this love in person, together, as we’ve always dreamed.<br />
+			<br>
+			Because with you, my love, everything is as perfect as it seemed.<br />
+			<br>
+			<br>
+			I'm sorry if it's short compared to my previous letters, but I poured a lot of my thoughts and feelings in creating this letter/poem if you will, even if its short, and I'm tired of always reminiscing about the past. I want to focus on the present and hope that I will still be with you in the future. I want to greet you again a Happy New Year!!! and I love you always💜💜<br/>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					HAPPY NEW YEAR!!
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- SEANNY</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2019, 7, 8);
+together.setHours(14);
+together.setMinutes(56);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
